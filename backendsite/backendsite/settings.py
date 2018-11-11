@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'consultants',
+    'locations',
+    'questions',
+    'solutions',
+    'surveys',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +80,12 @@ WSGI_APPLICATION = 'backendsite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'complianceappdb',
+        'USER': 'postgres',
+        'PASSWORD': 'django1234',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 

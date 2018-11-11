@@ -1,2 +1,6 @@
 
 \.idea/
+
+*.pyc
+
+backendsite/backendsite/__pycache__/
