@@ -28,4 +28,5 @@ urlpatterns = [
     path('questions/', questions.views.index, name='questions'),
     path('locations/', locations.views.index, name='locations'),
     path('consultants/', consultants.views.index, name='consultants'),
+    path('', consultants.views.home, name='home'),
 ]
